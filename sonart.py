@@ -9,6 +9,7 @@ import json
 import os
 import subprocess
 import time
+import datetime
 
 # <codecell>
 
@@ -93,7 +94,7 @@ while (issue_count<10):
         if img.matchKeypoints(source_kp, artist['keypoints'], minDist=0.15, minMatch=0.4):
         
             # write log that of which album recognised
-            print('Recognised {0}'.format(artist['title']))
+            print('{1} Recognised {0}'.format(artist['title'], str(datetime.datetime.now())))
     
             try:
                 # clear the queue
