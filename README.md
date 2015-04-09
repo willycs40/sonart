@@ -1,4 +1,4 @@
-# sonart
+# Sonart
 A computer vision controller for Sonos and Spotify
 
 # Purpose
